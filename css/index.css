@@ -8,6 +8,12 @@
     /*--color-accet: #something?;*/
 }
 
+*, 
+*::after, 
+*::before {
+    box-sizing: border-box;
+}
+
 
 /*Typography*/
 
@@ -92,3 +98,54 @@ a {
     color: var(--color-tertiary);
     cursor: pointer;
 }
+
+
+/*Buttons*/
+
+.btn {
+    border-radius: 36px;
+    padding: 2rem 2.5rem;
+    width: 100%;
+    border: 0;
+    font-weight: 500;
+    background: none;
+    margin: 1rem 0;
+    cursor: pointer;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.btn--primary {
+    background: var(--color-quariery);
+    color: var(--color-secondary);
+    transition: background 0.2s, color 0.2s;
+}
+
+.btn--primary:hover {
+    background: var(--color-secondary);
+    color: white;
+}
+
+.btn--secondary {
+    color: var(--color-secondary);
+    border: 2px solid var(--color-quariery);
+    transition: background 0.2s, color 0.2s;
+}
+
+.btn--secondary:hover {
+    color: white;
+    background-color: var(--color-quariery);
+    border: none;
+}
+
+a.btn {
+    display: inline-block;
+}
+
+@media screen and (min-width: 1024px) {
+    .btn {
+        font-size: 1.8rem;
+    }
+}
+
+
