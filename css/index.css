@@ -22,16 +22,16 @@ html {
 }
 
 body {
-    font-size: 2.4rem;
-    font-family: 'Alegreya Sans', Arial, Helvetica, sans-serif;
     color: var(--color-secondary);
+    font-family: 'Alegreya Sans', Arial, Helvetica, sans-serif;
+    font-size: 2.4rem;
     line-height: 1.5;
 }
 
 h1, h2, h3 {
     color: var(--color-primary);
     font-family: 'Source Sans Pro', sans-serif;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 h1 {
@@ -103,16 +103,16 @@ a {
 /*Buttons*/
 
 .btn {
-    border-radius: 36px;
-    padding: 2rem 2.5rem;
-    width: 100%;
-    border: 0;
-    font-weight: 500;
     background: none;
-    margin: 1rem 0;
+    border-radius: 36px;
+    border: 0;
     cursor: pointer;
-    white-space: nowrap;
+    font-weight: 500;
+    margin: 1rem 0;
+    padding: 2rem 2.5rem;
     text-align: center;
+    white-space: nowrap;
+    width: 100%;
 }
 
 .btn--primary {
@@ -127,15 +127,15 @@ a {
 }
 
 .btn--secondary {
-    color: var(--color-secondary);
     border: 2px solid var(--color-quariery);
+    color: var(--color-secondary);
     transition: background 0.2s, color 0.2s;
 }
 
 .btn--secondary:hover {
-    color: white;
     background-color: var(--color-quariery);
     border: none;
+    color: white;
 }
 
 a.btn {
@@ -152,20 +152,22 @@ a.btn {
 /*Inputs*/
 
 .input {
-    border: 0;
+    background: #ECECEC; /*Color taken from the canvas design*/
     border-radius: 36px;
+    border: 0;
+    color: #4D4C4C; /*Color taken from the canvas design*/
+    font-family: 'DM Sans', sans-serif;
+    font-size: 2rem; 
+    margin: 1rem 0;
     outline: 0;
     padding: 1.5rem 3rem;
-    color: #4D4C4C; /*Color taken from the canvas design*/
-    background: #ECECEC; /*Color taken from the canvas design*/
-    font-family: 'DM Sans', sans-serif;
+    text-align: center; /*TODO: Concider to change alignment to left again*/
     width: 100%;
-    margin: 1rem 0;
-    font-size: 2rem;
 }
 
 ::placeholder {
     color: #4D4C4C;
+    text-align: center;
 }
 
 @media screen and (min-width: 1024px) {
@@ -185,5 +187,36 @@ a.btn {
     
     .grid--1x2 {
         grid-template-columns: 1fr 1fr;
+    }
+}
+
+/*EamilBox*/
+
+.emailBox {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10%; /*Adding a margin here for mobile, might delete later*/
+    margin-right: 10%; /*Adding a margin here for mobile, might delete later*/
+}
+
+.emailBox .btn {
+    width: 80%;
+}
+
+.emailBox__heading {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+
+    .emailBox {
+        margin: 0 30%; /*TODO: Might remove this later*/
+    }
+    
+    .emailBox__heading {
+        font-size: 5rem;
     }
 }
