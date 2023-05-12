@@ -149,3 +149,28 @@ a.btn {
 }
 
 
+/*Inputs*/
+
+.input {
+    border: 0;
+    border-radius: 36px;
+    outline: 0;
+    padding: 1.5rem 3rem;
+    color: #4D4C4C; /*Color taken from the canvas design*/
+    background: #ECECEC; /*Color taken from the canvas design*/
+    font-family: 'DM Sans', sans-serif;
+    width: 100%;
+    margin: 1rem 0;
+    font-size: 2rem;
+}
+
+::placeholder {
+    color: #4D4C4C;
+}
+
+@media screen and (min-width: 1024px) {
+    .input {
+        font-size: 1.8rem;
+    }
+}
+
