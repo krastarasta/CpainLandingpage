@@ -28,6 +28,10 @@ body {
     line-height: 1.5;
 }
 
+.conatiner {
+    margin: 0 20%; /*TODO: FIX: the image and the hero container has grown larger than its conatiner*/
+}
+
 h1, h2, h3 {
     color: var(--color-primary);
     font-family: 'Source Sans Pro', sans-serif;
@@ -181,6 +185,8 @@ a.btn {
 
 .grid {
     display: grid;
+    justify-items: center;
+    align-items: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -218,5 +224,42 @@ a.btn {
     
     .emailBox__heading {
         font-size: 5rem;
+    }
+}
+
+
+/*Hero*/
+
+.hero {
+    text-align: center;
+    font-size: 1.4rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid var(--color-quariery);
+}
+
+.hero h1 {  /*TODO: Concider to change h1 and font size for all headings*/
+    font-size: 5rem;
+}
+
+.hero__image img {
+    height: 400px;
+    margin: 0 25px;
+}
+
+@media screen and (min-width: 768px) {
+    .hero {
+        text-align:left;
+        font-size: 1.8rem;
+    }
+
+    .hero h1 {  /*TODO: Concider to change h1 and font size for all headings*/
+        font-size: 10rem;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .hero {
+        grid-template-columns: 70fr 30fr;
     }
 }
