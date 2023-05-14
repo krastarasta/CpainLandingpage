@@ -49,7 +49,7 @@ h2 {
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: 4rem;
 }
 
 p {
@@ -67,11 +67,11 @@ p {
     }
 
     h2 {
-        font-size: 4rem;
+        font-size: 4rem; /*TODO: Set emailbox fontsize - delete styles in email box for font*/
     }
 
     h3 {
-       font-size:  2.4rem;
+       font-size:  5rem;
     }
 }
 
@@ -370,4 +370,50 @@ a.btn {
     .nav__item {
         border-bottom: 0;
     }
+}
+
+
+/*Media boxes*/
+
+.media {
+    margin-top: 30px;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.media__txtBox {
+    padding: 5px;
+}
+
+.media__txtBox h3 {
+    font-family: 'Alegreya Sans', Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    margin-top: 20px;
+    /* letter-spacing: 0.05rem; TODO: Check this, fix font space
+    word-spacing: 0.02rem; */
+
+}
+
+.media__image img {
+    height: 300px;
+}
+
+@media screen and (min-width: 768px) {
+    .media {
+        grid-template-columns: 50fr 50fr; /*Make image be the smalles box*/
+        text-align: left;
+        grid-template-areas: "mediaImage mediaTxtBox";
+    }
+
+    /* .media__image {  TODO: Make the fraction 35 for image and 65 for txtbox
+        grid-area: mediaImage;
+    }
+
+    .media__txtBox {
+        grid-area: mediaTxtBox;
+    } */
+
+    .media:nth-of-type(even) .media__image {
+        order: 2;
+      }
 }
