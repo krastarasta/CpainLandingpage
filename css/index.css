@@ -196,6 +196,30 @@ a.btn {
     }
 }
 
+
+/*Icons*/ 
+
+.icon {
+    width:40px;
+    height: 40px;
+}
+
+.icon--primary {
+    fill: var(--color-primary); /*TODO: Color is now defined in the sprite file. Figure out why it won´t be defined here*/
+}
+
+.icon-container {
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-quariery);
+}
+
+
+ 
 /*EamilBox*/
 
 .emailBox {
@@ -263,6 +287,7 @@ a.btn {
         grid-template-columns: 70fr 30fr;
     }
 }
+
 
 /*Collapsibles*/ 
 
