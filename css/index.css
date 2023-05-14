@@ -44,12 +44,12 @@ h1 {
 }
 
 h2 {
-    font-size: 4rem;
+    font-size: 2rem; /*TODO: Go over the headings and see that they are right*/
+    font-weight: 400;
 }
 
 h3 {
-    font-size: 3rem;
-    font-weight: 400;
+    font-size: 2rem;
 }
 
 p {
@@ -247,7 +247,7 @@ a.btn {
     }
     
     .emailBox__heading {
-        font-size: 5rem;
+        font-size: 3rem;
     }
 }
 
