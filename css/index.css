@@ -223,6 +223,7 @@ a.btn {
 /*EamilBox*/
 
 .emailBox {
+    margin-top: 10rem;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -243,7 +244,7 @@ a.btn {
 @media screen and (min-width: 768px) {
 
     .emailBox {
-        margin: 0 30%; /*TODO: Might remove this later*/
+        margin: 5rem 30%; /*TODO: Might remove this later*/
     }
     
     .emailBox__heading {
@@ -255,6 +256,7 @@ a.btn {
 /*Hero*/
 
 .hero {
+    margin-top: 1rem;
     text-align: center;
     font-size: 1.4rem;
     padding-bottom: 2rem;
@@ -300,7 +302,7 @@ a.btn {
     transition: all .3s;
 }
 
-.collapsible--expanded .collapsible__content {
+.collapsible--expanded .collapsible__content { /*Use the collapsble--expanded class when you want the collapsable to be open when you refresh the side.*/
     max-height: 100vh;
     opacity: 1;
 }
@@ -355,6 +357,7 @@ a.btn {
 }
 
 @media screen and (min-width: 768px) {
+    
     
     .nav__toggler {
         display: none;
@@ -416,4 +419,28 @@ a.btn {
     .media:nth-of-type(even) .media__image {
         order: 2;
       }
+}
+
+
+/*Footer*/
+
+.footer {
+    padding: 40px 40px;
+    background: var(--color-quariery);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo, h2{
+    margin: 0;
+}
+
+.footer, p {
+    margin: 0;
+}
+
+
+.second-letter {
+    color: var(--color-secondary);
 }
