@@ -13,6 +13,7 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <div class="nav collapsible">
@@ -26,29 +27,29 @@
       </span>
       <ul class="list list--inline nav__list collapsible__content">
         <li class="nav__item"><a href="#">About us</a></li>
-        <li class="nav__item"><a href="#">More</a></li>
-        <li class="nav__item"><a href="#">Home</a></li>
         <li class="nav__item"><a href="#">Contact</a></li>
+        <li class="nav__item"><a href="#">Home</a></li>
+        <li class="nav__item"><a href="#">EN/NO</a></li>
       </ul>
     </div>
     <div class="conatiner">
       <div class="hero grid grid--1x2">
         <div class="hero__txtBox">
-          <h1>Be notified!</h1>
+          <h1 data-aos="fade-right">Be notified!</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
             cupiditate ratione eius illum aperiam molestias exercitationem,
             illo, id quidem voluptates aliquam iusto vitae. Beatae, ducimus.
           </p>
         </div>
-        <div class="hero__image">
+        <div data-aos="fade-left" class="hero__image">
           <img
             src="images/tlfPictureCropped.jpg"
             alt="Image showing how the app looks like"
           />
         </div>
       </div>
-      <div class="emailBox">
+      <div data-aos="zoom-in" class="emailBox">
         <h3 class="emailBox__heading">Enter your email and get notified!</h3>
         <input
           type="text"
@@ -122,22 +123,25 @@
         </div>
       </article>
     </div>
-    <footer class="footer">
-      <h2 class="footer-logo">
-        &#169;<span class="second-letter">C</span>pain
-      </h2>
-      <p>
+    <footer class="footer grid grid--1x3">
+      <ul class="list footer__list">
+        <li class="list__item">About us</li>
+        <li class="list__item">Contact</li>
+        <li class="list__item">Home</li>
+        <li class="list__item">EN/NO</li>
+      </ul>
+      <p class="footer__quote">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet dolorum
         suscipit voluptatum?
       </p>
-      <ul class="list">
-        <li class="list__item">About us</li>
-        <li class="list__item">More</li>
-        <li class="list__item">Home</li>
-        <li class="list__item">Contact</li>
-      </ul>
+      <h2 class="footer-logo">
+        &#169;<span class="second-letter">C</span>pain
+      </h2>
     </footer>
-
     <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

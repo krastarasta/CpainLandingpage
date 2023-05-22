@@ -194,6 +194,11 @@ a.btn {
     .grid--1x2 {
         grid-template-columns: 1fr 1fr;
     }
+
+    .grid--1x3 {
+        grid-template-columns: 20fr auto 20fr;
+    }
+
 }
 
 
@@ -223,13 +228,17 @@ a.btn {
 /*EamilBox*/
 
 .emailBox {
-    margin-top: 10rem;
+    margin-top: 1rem;
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-left: 10%; /*Adding a margin here for mobile, might delete later*/
     margin-right: 10%; /*Adding a margin here for mobile, might delete later*/
+}
+
+.emailBox, h3 {
+    padding-top: 0;
 }
 
 .emailBox .btn {
@@ -256,10 +265,10 @@ a.btn {
 /*Hero*/
 
 .hero {
-    margin-top: 1rem;
+    margin-top: 2rem;
     text-align: center;
     font-size: 1.4rem;
-    padding-bottom: 2rem;
+    padding-bottom: 5rem;
     border-bottom: 2px solid var(--color-quariery);
 }
 
@@ -276,6 +285,8 @@ a.btn {
     .hero {
         text-align:left;
         font-size: 1.8rem;
+        margin-top: 5rem;
+        padding-bottom: 5rem;
     }
 
     .hero h1 {  /*TODO: Concider to change h1 and font size for all headings*/
@@ -321,6 +332,7 @@ a.btn {
 
 .nav__list {
     width: 100%;
+    margin: 0;
 }
 
 .nav__item {
@@ -379,7 +391,7 @@ a.btn {
 /*Media boxes*/
 
 .media {
-    margin-top: 30px;
+    margin: 10rem 0;
     font-size: 1.8rem;
     text-align: center;
 }
@@ -424,23 +436,38 @@ a.btn {
 
 /*Footer*/
 
+/*TODO:GO over footer and center the components within the grid etc...*/
+
 .footer {
-    padding: 40px 40px;
     background: var(--color-quariery);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 40px 10px;
 }
 
 .footer-logo, h2{
     margin: 0;
+    font-size: 4rem;
 }
 
-.footer, p {
+footer > p {
     margin: 0;
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 1rem;
+    font-style: italic;
 }
-
 
 .second-letter {
     color: var(--color-secondary);
+}
+
+.footer__list .list__item {
+    display: inline;
+}
+
+@media screen and (min-width: 768px) {
+   
+    .footer__list .list__item {
+        display: block;
+    }
+
 }
