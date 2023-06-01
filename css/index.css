@@ -471,3 +471,12 @@ footer > p {
     }
 
 }
+
+/*Coming soon component*/
+
+.comingSoon-component {
+    height: 60vh;
+    text-align: center;
+    overflow: scroll;
+    margin: 20px 0;
+}
