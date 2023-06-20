@@ -29,7 +29,13 @@ body {
 }
 
 .conatiner {
-    margin: 0 20%; /*TODO: FIX: the image and the hero container has grown larger than its conatiner*/
+    margin: 0 5%; /*TODO: FIX: the image and the hero container has grown larger than its conatiner*/
+}
+
+@media screen and (min-width: 1024px) {
+    .conatiner {
+        margin: 0 20%;
+    }
 }
 
 h1, h2, h3 {
