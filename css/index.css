@@ -388,6 +388,55 @@ a.btn {
     }
 }
 
+/*Media component*/
+
+.mediaComponent{
+    row-gap: 5%;
+    margin-bottom: 70px;
+}
+
+.mediaContainer {
+    /* padding: 10rem; */
+    display: flex;
+    background-color: var(--color-quariery);
+    border-radius: 25px;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+}
+
+.mediaPicture {
+    align-self: baseline;
+    margin: 20px 0 20px 20px;
+    text-align: center;
+}
+
+.mediaTag {
+   margin: 0;
+}
+
+.mediaContent {
+    margin: 20px;
+}
+
+.mediaComponent img {
+    width: 8rem;
+    border-radius: 5rem;
+}
+
+.mediaContainer h4 {
+    margin: 0;
+}
+
+.mediaContainer p {
+    font-size: 1.2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .mediaComponent{
+        column-gap: 5%;
+    }
+    }
 
 /*Media boxes*/
 
