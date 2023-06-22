@@ -30,7 +30,7 @@ body {
 }
 
 .conatiner {
-    margin: 0 5%; /*TODO: FIX: the image and the hero container has grown larger than its conatiner*/
+    margin: 50px 5%; /*TODO: FIX: the image and the hero container has grown larger than its conatiner*/
 }
 
 @media screen and (min-width: 1024px) {
@@ -242,6 +242,9 @@ a.btn {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-top: 2px solid var(--color-quariery);
+    border-bottom: 2px solid var(--color-quariery);
+    padding: 1rem 0 3rem 0;
 }
 
 .emailBox, h3 {
@@ -275,17 +278,21 @@ a.btn {
 .hero {
     margin-top: 2rem;
     text-align: center;
-    font-size: 1.4rem;
-    padding-bottom: 5rem;
-    border-bottom: 2px solid var(--color-quariery);
+    /* font-size: 1.4rem; */
+    padding-bottom: 1rem;
 }
 
-.hero h1 {  /*TODO: Concider to change h1 and font size for all headings*/
-    font-size: 5rem;
+.hero h1 {
+    margin: 1rem 0;
+}
+
+.hero p {  /*TODO: Concider to change h1 and font size for all headings*/
+    /* font-size: 5rem; */
+    color: lightgray;
 }
 
 .hero__image img {
-    height: 400px;
+    height: 300px;
     margin: 0 25px;
 }
 
@@ -335,7 +342,7 @@ a.btn {
     flex-wrap: wrap;
     padding: 2rem 1rem;
     align-items: center;
-    margin: 0 5%;
+    margin: 1rem 5%; 
 }
 
 .nav__list {
@@ -435,7 +442,7 @@ a.btn {
     margin: 0;
 }
 
-.mediaContainer p {
+6Container p {
     font-size: 1.2rem;
 }
 
@@ -448,7 +455,7 @@ a.btn {
 /*Media boxes*/
 
 .media {
-    margin: 10rem 0;
+    margin: 8rem 0;
     font-size: 1.8rem;
     text-align: center;
 }
@@ -467,7 +474,7 @@ a.btn {
 }
 
 .media__image img {
-    height: 300px;
+    height: 250px;
 }
 
 @media screen and (min-width: 768px) {
