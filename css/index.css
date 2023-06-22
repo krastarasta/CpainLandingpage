@@ -5,6 +5,7 @@
     --color-secondary: #3BACB6;
     --color-tertiary: #82DBD8;
     --color-quariery: #B3E8E5;
+    --color-lightGrey: #f5f5f5;
     /*--color-accet: #something?;*/
 }
 
@@ -404,7 +405,7 @@ a.btn {
 .mediaContainer {
     /* padding: 10rem; */
     display: flex;
-    background-color: var(--color-quariery);
+    background-color: var(--color-lightGrey);
     border-radius: 25px;
     justify-content: left;
     align-items: center;
