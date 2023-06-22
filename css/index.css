@@ -404,8 +404,13 @@ a.btn {
 
 /*Media component*/
 
+.cardsContainer {
+    text-align: center;
+}
+
 .mediaComponent{
     row-gap: 5%;
+    margin-top: 1rem;
     margin-bottom: 70px;
 }
 
@@ -539,8 +544,11 @@ footer > p {
 /*Coming soon component*/
 
 .comingSoon-component {
-    height: 60vh;
     text-align: center;
     overflow: scroll;
-    margin: 20px 0;
+    margin: 2rem 0 6rem 0;
+}
+
+.comingSoon-component h2 {
+    margin-bottom: 1rem;
 }
