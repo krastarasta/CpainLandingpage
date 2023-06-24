@@ -552,3 +552,21 @@ footer > p {
 .comingSoon-component h2 {
     margin-bottom: 1rem;
 }
+
+/* Slidable carousel*/
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid var(--color-lightGrey);
+    border-radius: 25px;
+    padding: 2rem;
+    background-color: var(--color-lightGrey);
+}
+
+.swiper {
+    width: 80%;
+}

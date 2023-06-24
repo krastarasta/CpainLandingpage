@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700;900&family=DM+Sans&family=Source+Sans+Pro:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div class="nav collapsible">
+      <a class="logoImg" href="/"
+        ><img src="images/CpainLogo1-kopi.jpg" alt=""
+      /></a>
+      <span>
+        <svg class="icon icon--primary nav__toggler">
+          <use href="images/sprite-3.svg#menuIcon"></use>
+        </svg>
+      </span>
+      <ul class="list list--inline nav__list collapsible__content">
+        <li class="nav__item"><a href="about.html">About us</a></li>
+        <li class="nav__item"><a href="#">Contact</a></li>
+        <li class="nav__item"><a href="#">Home</a></li>
+      </ul>
+    </div>
+    <section>
+      <div class="conatiner">
+        <div class="swiper mySwiper sliderContainer">
+          <div class="swiper-wrapper cardHolder">
+            <article class="swiper-slide card">
+              <div class="media__image">
+                <img
+                  src="images/tlfPictureCropped.jpg"
+                  alt="Image showing how the app looks like"
+                />
+              </div>
+              <div class="media__txtBox">
+                <h3 class="cardHeading">What the app can do 1.</h3>
+                <p class="cardText">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                  repudiandae maiores qui veniam soluta. Accusantium laboriosam
+                  iure voluptatem architecto nesciunt officia ex possimus
+                  deleniti ab.
+                </p>
+              </div>
+            </article>
+            <article class="swiper-slide card">
+              <div class="media__image">
+                <img
+                  src="images/tlfPictureCropped.jpg"
+                  alt="Image showing how the app looks like"
+                />
+              </div>
+              <div class="media__txtBox">
+                <h3 class="cardHeading">What the app can do 2.</h3>
+                <p class="cardText">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                  repudiandae maiores qui veniam soluta. Accusantium laboriosam
+                  iure voluptatem architecto nesciunt officia ex possimus
+                  deleniti ab.
+                </p>
+              </div>
+            </article>
+            <article class="swiper-slide card">
+              <div class="media__image">
+                <img
+                  src="images/tlfPictureCropped.jpg"
+                  alt="Image showing how the app looks like"
+                />
+              </div>
+              <div class="media__txtBox">
+                <h3 class="cardHeading">What the app can do 3.</h3>
+                <p class="cardText">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                  repudiandae maiores qui veniam soluta. Accusantium laboriosam
+                  iure voluptatem architecto nesciunt officia ex possimus
+                  deleniti ab.
+                </p>
+              </div>
+            </article>
+            <article class="swiper-slide card">
+              <div class="media__image">
+                <img
+                  src="images/tlfPictureCropped.jpg"
+                  alt="Image showing how the app looks like"
+                />
+              </div>
+              <div class="media__txtBox">
+                <h3 class="cardHeading">What the app can do 4.</h3>
+                <p class="cardText">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                  repudiandae maiores qui veniam soluta. Accusantium laboriosam
+                  iure voluptatem architecto nesciunt officia ex possimus
+                  deleniti ab.
+                </p>
+              </div>
+            </article>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer grid grid--1x3">
+      <ul class="list footer__list">
+        <li class="list__item">About us</li>
+        <li class="list__item">Contact</li>
+        <li class="list__item">Home</li>
+      </ul>
+      <p class="footer__quote">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet dolorum
+        suscipit voluptatum?
+      </p>
+      <h2 class="footer-logo">
+        &#169;<span class="second-letter">C</span>pain
+      </h2>
+    </footer>
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        cssMode: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        mousewheel: true,
+        keyboard: true,
+      });
+    </script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
