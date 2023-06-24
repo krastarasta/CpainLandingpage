@@ -564,9 +564,32 @@ footer > p {
     border: 2px solid var(--color-lightGrey);
     border-radius: 25px;
     padding: 2rem;
-    background-color: var(--color-lightGrey);
+    height: 60%;
+    font-size: 1.8rem;
+    /* background-color: var(--color-lightGrey); */
+}
+
+.card .img {
+    max-height: 250px;
 }
 
 .swiper {
     width: 80%;
+}
+
+
+.swiper-button-next:after, .swiper-button-prev:after {
+    color: var(--color-primary);
+    display: none;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--color-primary);
+}
+
+@media screen and (min-width: 768px) {
+    .swiper-button-next:after, .swiper-button-prev:after {
+        display:contents;
+    }
+    
 }
