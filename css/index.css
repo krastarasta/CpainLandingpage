@@ -238,6 +238,7 @@ a.btn {
 
 .emailBox {
     margin-top: 1rem;
+    margin-bottom: 5rem;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -546,7 +547,7 @@ footer > p {
 .comingSoon-component {
     text-align: center;
     overflow: scroll;
-    margin: 2rem 0 6rem 0;
+    margin: 6rem 0;
 }
 
 .comingSoon-component h2 {
@@ -556,6 +557,7 @@ footer > p {
 /* Slidable carousel*/
 
 .card {
+    margin: 1rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -584,6 +586,12 @@ footer > p {
 
 @media screen and (min-width: 768px) {
     
+
+    .card .img {
+        max-width: 450px;
+    }
+    
+
     .swiper {
         width: 80%;
     }

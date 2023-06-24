@@ -11,13 +11,13 @@
       href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700;900&family=DM+Sans&family=Source+Sans+Pro:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <div class="nav collapsible">
@@ -61,70 +61,130 @@
         />
         <button class="btn btn--primary">Get notified!</button>
       </div>
-      <article class="media grid grid--1x2">
-        <div class="media__image">
-          <img
-            src="images/tlfPictureCropped.jpg"
-            alt="Image showing how the app looks like"
-          />
+      <section class="cardHolderContainer">
+        <div class="swiper mySwiper sliderContainer">
+          <div class="swiper-wrapper cardHolder">
+            <article class="swiper-slide card">
+              <div class="media__image">
+                <img
+                  src="images/tlfPictureCropped.jpg"
+                  alt="Image showing how the app looks like"
+                />
+              </div>
+              <div class="media__txtBox">
+                <h3 class="cardHeading">What the app can do 1.</h3>
+                <p class="cardText">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                  repudiandae maiores qui veniam soluta. Accusantium laboriosam
+                  iure voluptatem architecto nesciunt officia ex possimus
+                  deleniti ab.
+                </p>
+              </div>
+            </article>
+            <article class="swiper-slide card">
+              <div class="media__image">
+                <img
+                  src="images/tlfPictureCropped.jpg"
+                  alt="Image showing how the app looks like"
+                />
+              </div>
+              <div class="media__txtBox">
+                <h3 class="cardHeading">What the app can do 2.</h3>
+                <p class="cardText">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                  repudiandae maiores qui veniam soluta. Accusantium laboriosam
+                  iure voluptatem architecto nesciunt officia ex possimus
+                  deleniti ab.
+                </p>
+              </div>
+            </article>
+            <article class="swiper-slide card">
+              <div class="media__image">
+                <img
+                  src="images/tlfPictureCropped.jpg"
+                  alt="Image showing how the app looks like"
+                />
+              </div>
+              <div class="media__txtBox">
+                <h3 class="cardHeading">What the app can do 3.</h3>
+                <p class="cardText">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                  repudiandae maiores qui veniam soluta. Accusantium laboriosam
+                  iure voluptatem architecto nesciunt officia ex possimus
+                  deleniti ab.
+                </p>
+              </div>
+            </article>
+            <article class="swiper-slide card">
+              <div class="media__image">
+                <img
+                  src="images/tlfPictureCropped.jpg"
+                  alt="Image showing how the app looks like"
+                />
+              </div>
+              <div class="media__txtBox">
+                <h3 class="cardHeading">What the app can do 4.</h3>
+                <p class="cardText">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                  repudiandae maiores qui veniam soluta. Accusantium laboriosam
+                  iure voluptatem architecto nesciunt officia ex possimus
+                  deleniti ab.
+                </p>
+              </div>
+            </article>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
-        <div class="media__txtBox">
-          <h3>What the app can do 1.</h3>
+      </section>
+      <div class="comingSoon-component">
+        <div>
+          <h2>About Us</h2>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
-            repudiandae maiores qui veniam soluta. Accusantium laboriosam iure
-            voluptatem architecto nesciunt officia ex possimus deleniti ab.
+            Page in progress... More content comming soon. Lorem, ipsum dolor
+            sit amet consectetur adipisicing elit. Alias dicta eaque blanditiis,
+            similique reiciendis numquam accusantium deserunt ad, vitae natus,
+            cumque iusto laudantium quidem voluptates animi quaerat iste soluta!
+            Ea.
           </p>
         </div>
-      </article>
-      <article class="media grid grid--1x2">
-        <div class="media__image">
-          <img
-            src="images/tlfPictureCropped.jpg"
-            alt="Image showing how the app looks like"
-          />
+      </div>
+      <div class="cardsContainer">
+        <h2>Our Team</h2>
+        <div data-aos="zoom-in" class="mediaComponent grid grid--1x2">
+          <div class="mediaContainer">
+            <div class="mediaPicture">
+              <img src="/images/profilePicIcon.jpg" alt="profile picture" />
+              <p class="mediaTag">Role: Director</p>
+              <p>Age: 26</p>
+            </div>
+            <div class="mediaContent">
+              <h4>Employe 1</h4>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Dolores, dolorem. Quibusdam rem consequuntur voluptatibus
+                voluptates numquam, deserunt quisquam eligendi sequi.
+              </p>
+            </div>
+          </div>
+          <div data-aos="zoom-in" class="mediaContainer">
+            <div class="mediaPicture">
+              <img src="/images/profilePicIcon.jpg" alt="profile picture" />
+              <p class="mediaTag">Role: Director</p>
+              <p>Age: 46</p>
+            </div>
+            <div class="mediaContent">
+              <h4>Employe 2</h4>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Dolores, dolorem. Quibusdam rem consequuntur voluptatibus
+                voluptates numquam, deserunt quisquam eligendi sequi.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="media__txtBox">
-          <h3>What the app can do 2.</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
-            repudiandae maiores qui veniam soluta. Accusantium laboriosam iure
-            voluptatem architecto nesciunt officia ex possimus deleniti ab.
-          </p>
-        </div>
-      </article>
-      <article class="media grid grid--1x2">
-        <div class="media__image">
-          <img
-            src="images/tlfPictureCropped.jpg"
-            alt="Image showing how the app looks like"
-          />
-        </div>
-        <div class="media__txtBox">
-          <h3>What the app can do 3.</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
-            repudiandae maiores qui veniam soluta. Accusantium laboriosam iure
-            voluptatem architecto nesciunt officia ex possimus deleniti ab.
-          </p>
-        </div>
-      </article>
-      <article class="media grid grid--1x2">
-        <div class="media__image">
-          <img
-            src="images/tlfPictureCropped.jpg"
-            alt="Image showing how the app looks like"
-          />
-        </div>
-        <div class="media__txtBox">
-          <h3>What the app can do 4.</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
-            repudiandae maiores qui veniam soluta. Accusantium laboriosam iure
-            voluptatem architecto nesciunt officia ex possimus deleniti ab.
-          </p>
-        </div>
-      </article>
+      </div>
     </div>
     <footer class="footer grid grid--1x3">
       <ul class="list footer__list">
@@ -142,6 +202,24 @@
     </footer>
     <script src="main.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        cssMode: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        mousewheel: true,
+        keyboard: true,
+      });
+    </script>
     <script>
       AOS.init();
     </script>
